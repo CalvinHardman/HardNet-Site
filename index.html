@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HARD NET</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARD NET | Project Hub</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --accent: #00ff41; /* "Matrix" green for a dev-heavy look */
+            --text: #d1d5db;
+            --card: #16161a;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(to bottom, #111, var(--bg));
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid #333;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        .nav-links {
+            margin-top: 2rem;
+        }
+        .nav-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 15px;
+            border: 1px solid var(--accent);
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+        .dev-tag {
+            font-size: 0.8rem;
+            color: #888;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Visible content goes here -->
+<header>
+    <h1>HARD NET</h1>
+    <p>A comprehensive development showcase and user onboarding terminal.</p>
+    <div class="nav-links">
+        <a href="#onboarding">Onboarding</a>
+        <a href="#devlog">Dev Log</a>
+    </div>
+</header>
+
+<div class="container">
+    <section id="onboarding" class="section">
+        <h2>01. Onboarding</h2>
+        <div class="card">
+            <p>Welcome to the HARD NET project. This interface is designed to introduce new users to the core mechanics, philosophy, and architecture of the project.</p>
+            <p><em>[Your onboarding content or introduction video will go here.]</em></p>
+        </div>
+    </section>
+
+    <section id="devlog" class="section">
+        <h2>02. Development Log</h2>
+        <div class="card">
+            <span class="dev-tag">ENTRY_ID: 001 | DATE: 2026-03-06</span>
+            <h3>Infrastructure Initialization</h3>
+            <p>The hardnet.studio domain has been successfully pointed to the GitHub Pages repository. DNS propagation is complete. The project terminal is now online.</p>
+        </div>
+        </section>
+</div>
 
 </body>
 </html>
