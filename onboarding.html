@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding | HARD NET</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --accent: #00ff41;
+            --text: #ffffff;
+            --secondary: #888;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .onboarding-container {
+            max-width: 600px;
+            padding: 4rem 2rem;
+        }
+        .step {
+            margin-bottom: 5rem;
+            opacity: 0.9;
+        }
+        .step-number {
+            color: var(--accent);
+            font-family: monospace;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 0 0 1.5rem 0;
+            letter-spacing: -0.5px;
+        }
+        p {
+            line-height: 1.8;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+        .action-box {
+            border-left: 2px solid var(--accent);
+            padding-left: 1.5rem;
+            margin-top: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 3rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-family: monospace;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="onboarding-container">
+    <div class="step">
+        <span class="step-number">PHASE_01</span>
+        <h2>The Core Objective</h2>
+        <p>HARD NET is more than a technical showcase; it is a framework for [Insert Project Purpose]. We believe that by establishing [Concept A], we can better understand the intersection of [Concept B] and user interaction.</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">PHASE_02</span>
+        <h2>Navigating the Architecture</h2>
+        <p>The system is built on three primary pillars: Scalability, Security, and [User-Defined Pillar]. Users are encouraged to explore the development log to see how these theories are tested in real-time.</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">PHASE_03</span>
+        <h2>Getting Started</h2>
+        <div class="action-box">
+            <p>To begin your journey with HARD NET, we recommend the following sequence:</p>
+            <ul style="color: var(--secondary); list-style: square;">
+                <li>Review the current system status in the Dev Log.</li>
+                <li>Connect with the community via [Discord/Social Link].</li>
+                <li>Submit your first data packet through the [Feature Name].</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-link">← RETURN TO TERMINAL</a>
+</div>
+
+</body>
+</html>
